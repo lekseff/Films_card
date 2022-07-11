@@ -1,38 +1,86 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #4b4949;
+  height: 100%;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  /* border: 1px solid gray; */
+  padding: 12px;
+  background-color: #fff;
+  box-shadow: -2px 0px 9px 6px rgb(34 60 80 / 20%);
+}
+
+.card__logo {
+  width: 160px;
+}
+
+.card__logo img {
+  width: 100%;
+  box-shadow: -2px 0px 9px 6px rgb(34 60 80 / 20%);
+}
+
+.card_description {
+  flex: 1 1;
+}
+
+.card__info {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card__title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card__rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card__buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.card__buy {
+  font-size: 14px;
+  padding: 6px 40px;
+  margin-bottom: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: rgb(44, 222, 219);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card__buy a {
+  font-family: inherit;
+  color: inherit;
 }
