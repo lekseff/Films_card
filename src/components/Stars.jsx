@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {v4} from 'uuid';
 import Star from './Star';
 
@@ -18,3 +19,11 @@ function Stars(props) {
 }
 
 export default Stars
+
+Stars.defaultProps = {
+  count: 0,
+}
+
+Stars.propTypes = {
+  const: PropTypes.number
+}
